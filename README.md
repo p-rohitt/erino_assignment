@@ -21,8 +21,8 @@ This project implements a Contact Management feature, which is a mini-feature of
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/p-rohitt/erino_assignment.git
+   cd frontend
    ```
 
 2. Install dependencies:
