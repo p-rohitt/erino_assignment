@@ -155,3 +155,21 @@ This project implements a Contact Management feature, which is a mini-feature of
 4. Add form validation on the frontend using a library like Formik or react-hook-form.
 5. Implement error boundaries in React for better error handling on the frontend.
 6. Add unit and integration tests for both frontend and backend.
+
+# Screenshots
+
+### Home
+
+![Home Screen](image.png)
+
+### Add Contact
+
+![alt text](image-1.png)
+
+### Edit Contact
+
+![edit](image-2.png)
+
+### Pagination
+
+![alt text](image-3.png)
