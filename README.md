@@ -133,6 +133,42 @@ This project implements a Contact Management feature, which is a mini-feature of
 2. **Indexing**:
    - Creates an index on the email field for faster queries and to ensure uniqueness.
 
+
+   ## Challenges & Solutions
+
+### 1. Handling Form Validation
+- **Challenge**: Ensuring all required fields in the contact form are filled out before submission.
+- **Solution**: React's form validation was implemented to check inputs before submission. Error messages were displayed for missing or invalid data.
+
+### 2. API Errors and Response Handling
+- **Challenge**: Managing API errors like 500 Internal Server Errors.
+- **Solution**: Backend API was configured to handle requests and send proper responses, and the frontend was set up to display meaningful error messages when necessary.
+
+### 3. Managing State for Contact List
+- **Challenge**: Keeping track of added, edited, and deleted contacts.
+- **Solution**: React's state hooks (`useState`) were used to manage the contact list, ensuring it was updated after each operation (add, edit, delete).
+
+### 4. Pagination and Sorting in Table
+- **Challenge**: Displaying a large number of contacts in a paginated and sortable table.
+- **Solution**: MUI's `TablePagination` and `TableSortLabel` components were implemented to provide pagination and sorting functionality.
+
+### 5. Connecting Frontend to Backend (CORS Issues)
+- **Challenge**: Cross-origin issues when trying to connect the frontend and backend.
+- **Solution**: CORS was configured in the backend to allow requests from the frontend domain, solving cross-origin issues.
+
+### 6. Database Connection Issues
+- **Challenge**: Setting up the backend to connect to the database (MongoDB).
+- **Solution**: MongoDB was properly connected using the correct URI, and necessary configurations were made to accept connections.
+
+### 7. Handling CRUD Operations
+- **Challenge**: Performing create, read, update, and delete operations on contacts.
+- **Solution**: The backend API routes were correctly set up to handle these CRUD operations, and the frontend communicated with the API to fetch and update data.
+
+### 8. Managing Authentication
+- **Challenge**: Securely handling user data and access.
+- **Solution**: JWT (JSON Web Tokens) or sessions were used for user authentication and authorization, ensuring data security.
+
+
 ## Technical Decisions
 
 1. **React.js for Frontend**: Chosen for its component-based architecture, which allows for reusable UI elements and efficient rendering.
