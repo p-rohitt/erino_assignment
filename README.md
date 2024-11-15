@@ -20,34 +20,39 @@ This project implements a Contact Management feature, which is a mini-feature of
 ### Frontend Setup
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/p-rohitt/erino_assignment.git
    cd frontend
    ```
 
 2. Install dependencies:
+
    ```
    npm install
    ```
 
 3. Start the development server:
    ```
-   npm start
+   npm run dev
    ```
 
 ### Backend Setup
 
 1. Navigate to the backend directory:
+
    ```
    cd backend
    ```
 
 2. Install dependencies:
+
    ```
    npm install
    ```
 
 3. Create a `.env` file in the backend directory and add the following:
+
    ```
    PORT=5001
    MONGODB_URI=mongodb://localhost:27017/crm_contacts
@@ -55,7 +60,7 @@ This project implements a Contact Management feature, which is a mini-feature of
 
 4. Start the backend server:
    ```
-   npm start
+   node server.js
    ```
 
 ### Database Setup
@@ -68,16 +73,19 @@ This project implements a Contact Management feature, which is a mini-feature of
 
 ### Frontend (React.js with Tailwind CSS)
 
-1. **Main Component (`ContactManagement.jsx`)**: 
+1. **Main Component (`ContactManagement.jsx`)**:
+
    - Manages the state for contacts, form data, pagination, and sorting.
    - Renders the main UI including the contact table and form dialog.
 
 2. **Contact Table**:
+
    - Displays contacts in a sortable table format.
    - Implements pagination for better performance with large datasets.
    - Provides edit and delete actions for each contact.
 
 3. **Add/Edit Contact Form**:
+
    - Rendered as a modal dialog.
    - Handles both adding new contacts and editing existing ones.
    - Performs basic form validation.
@@ -89,10 +97,12 @@ This project implements a Contact Management feature, which is a mini-feature of
 ### Backend (Node.js with Express.js)
 
 1. **Server Setup (`server.js`)**:
+
    - Configures Express.js server.
    - Sets up middleware for parsing JSON and handling CORS.
 
 2. **API Routes**:
+
    - Implements RESTful endpoints for contact operations:
      - GET /api/contacts: Retrieve all contacts
      - POST /api/contacts: Create a new contact
@@ -100,6 +110,7 @@ This project implements a Contact Management feature, which is a mini-feature of
      - DELETE /api/contacts/:id: Delete a contact
 
 3. **Database Integration**:
+
    - Uses Mongoose ODM for MongoDB interactions.
    - Defines a Contact schema and model.
 
@@ -110,6 +121,7 @@ This project implements a Contact Management feature, which is a mini-feature of
 ### Database (MongoDB)
 
 1. **Contact Schema**:
+
    - Defines the structure for contact documents:
      - firstName (String, required)
      - lastName (String, required)
@@ -143,4 +155,3 @@ This project implements a Contact Management feature, which is a mini-feature of
 4. Add form validation on the frontend using a library like Formik or react-hook-form.
 5. Implement error boundaries in React for better error handling on the frontend.
 6. Add unit and integration tests for both frontend and backend.
-
